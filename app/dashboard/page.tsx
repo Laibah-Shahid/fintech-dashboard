@@ -11,7 +11,7 @@ import { Button } from '@/components/ui/button';
 import {
   CreditCard, BarChart, FileText, ArrowRight, Loader2,
 } from 'lucide-react';
-import apiService, { Account, Transaction } from '@/services/apiService';
+import apiService, { Account, Transaction } from '@/lib/apiService';
 
 const DashboardPage = () => {
   const { user } = useAuth();
@@ -60,7 +60,7 @@ const DashboardPage = () => {
         <h1 className="text-3xl font-bold mb-2">
           Welcome back, {user?.name.split(' ')[0]}
         </h1>
-        <p className="text-gray-400">Here's an overview of your FinAPI sandbox.</p>
+        <p className="text-gray-400">Here&apos;s an overview of your FinAPI sandbox.</p>
       </div>
 
       {!user?.isSubscribed && (

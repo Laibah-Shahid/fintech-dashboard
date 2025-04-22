@@ -14,7 +14,7 @@ import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover
 import { format } from "date-fns";
 import { cn } from "@/lib/utils";
 import { useToast } from "@/hooks/use-toast";
-import apiService, { InvoiceData } from "@/services/apiService";
+import apiService, { InvoiceData } from "@/lib/apiService";
 
 const invoiceSchema = z.object({
   startDate: z.date({
